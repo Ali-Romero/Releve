@@ -1,0 +1,51 @@
+.thanks-section
+  display: flex
+  justify-content: center
+  align-items: center
+  flex: 1
+  width: 100%
+  background: $color-brown-1
+
+  &__inner
+    padding: 80px 0
+    text-align: center
+    position relative
+    z-index 3
+    +above($breakpoints.sm)
+      padding: 100px 0
+
+  &__title
+    margin-bottom: 11px;
+    +above($breakpoints.xxl)
+      margin-bottom: 20px
+
+  &__title-helper
+    font-size: 16px
+    line-height: 120%
+    margin-bottom: 40px
+    +above($breakpoints.sm)
+      font-size: 18px
+    +above($breakpoints.md)
+      font-size: 22px
+    +above($breakpoints.xxl)
+      font-size: 24px
+      margin-bottom: 40px
+    br
+      display: block
+      +above($breakpoints.sm)
+        display: none
+
+  &__btn
+    max-width: 250px
+    margin: 0 auto
+    +above($breakpoints.md)
+      max-width: 290px
+    +above($breakpoints.xxl)
+      max-width: 340px
+    .btn
+      padding: 0 10px
+      height: 52px
+      +above($breakpoints.sm)
+        height: 56px
+      +above($breakpoints.xxl)
+        height: 60px

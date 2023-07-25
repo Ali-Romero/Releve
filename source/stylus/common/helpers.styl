@@ -1,0 +1,114 @@
+.wrapper
+  max-width: 320px
+  margin: 0 auto
+  padding: 0 6px
+  +above($breakpoints.sm)
+    max-width: 750px
+    margin: 0 auto
+    padding: 0 12px
+  +above($breakpoints.md)
+    max-width: 990px
+    padding: 0 16px
+  +above($breakpoints.xxl)
+    padding: 0 20px
+    max-width: 1210px
+
+section
+  overflow-x: clip
+  max-width: 1920px
+  margin: 0 auto
+  font-size: 14px
+  line-height: 120%
+  +above($breakpoints.md)
+    font-size: 15px
+  +above($breakpoints.xxl)
+    font-size: 16px
+
+h1,
+h2
+  font-family: "Geometria-Bold"
+
+.d-flex
+  display: flex
+.d-block
+  display: block
+.d-i-block
+  display: inline-block
+.d-none
+  display: none
+
+.color-white
+  color: $color-white
+.color-black
+  color: $color-black
+.color-grey-1
+  color: $color-grey-1
+.color-pink-1
+  color: $color-pink-1
+.color-white-2
+  color: $color-white-2
+
+.font-g-reg
+  font-family: "Geometria-Regular"
+  font-weight: 400
+.font-g-med
+  font-family: "Geometria-Medium"
+  font-weight: 500
+.font-g-bold
+  font-family: "Geometria-Bold"
+  font-weight: 700
+
+.font-s-16
+  font-size: 14px
+  line-height: 120%
+  +above($breakpoints.md)
+    font-size: 15px
+  +above($breakpoints.xxl)
+    font-size: 16px
+.font-s-18
+  font-size: 15px
+  line-height: 120%
+  +above($breakpoints.md)
+    font-size: 16px
+  +above($breakpoints.xxl)
+    font-size: 18px
+.font-s-24
+  font-size: 17px
+  line-height: 120%
+  +above($breakpoints.md)
+    font-size: 18px
+  +above($breakpoints.xxl)
+    font-size: 24px
+.font-s-26
+  font-size: 18px
+  line-height: 120%
+  +above($breakpoints.sm)
+    font-size: 20px
+  +above($breakpoints.md)
+    font-size: 22px
+  +above($breakpoints.xxl)
+    font-size: 26px
+.font-s-64
+  font-size: 28px
+  line-height: 120%
+  +above($breakpoints.sm)
+    font-size: 36px
+  +above($breakpoints.md)
+    font-size: 50px
+  +above($breakpoints.xxl)
+    font-size: 64px
+
+.text-up
+  text-transform: uppercase
+.text-center
+  text-align: center
+.text-left
+  text-align: left
+
+.tap-color
+  -webkit-tap-highlight-color: transparent
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none

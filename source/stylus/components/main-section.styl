@@ -1,0 +1,109 @@
+.main-section
+  position: relative
+  z-index 1
+
+  &__image
+    position: absolute
+    bottom: 20px
+    right: 0
+    left: 0
+    z-index: -1;
+    +above($breakpoints.sm)
+      top: 26px;
+      bottom: auto
+      left: auto
+      top: 26px;
+      right: calc(50% - 416px);
+    +above($breakpoints.md)
+      right: calc(50% - 577px)
+    +above($breakpoints.xxl)
+      top: 36px
+      right calc(50% - 846px)
+    img
+      width 260px
+      height: auto
+      border-radius: 16px
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+        width 365px
+      +above($breakpoints.md)
+        width 462px
+      +above($breakpoints.xxl)
+        width 695px
+
+  &__decor
+    position: absolute
+    z-index -2
+    top: -113px;
+    right: calc(50% - 765px);
+    +above($breakpoints.xxl)
+      right calc(50% - 1060px)
+      top -113px
+    img
+      width 400px
+      height: auto
+      +above($breakpoints.xxl)
+        width 518px
+
+  &__inner
+    padding: 10px 0 308px 0
+    +above($breakpoints.sm)
+      padding: 44px 0 92px 0
+    +above($breakpoints.md)
+      padding: 70px 0 124px 0
+    +above($breakpoints.xxl)
+      padding: 90px 0 199px 0
+
+  &__title-info
+    position: absolute
+    padding: 12px 18px
+    border-radius: 45.5px;
+    border: 1px solid rgba(201, 60, 162, 0.06);
+    background: #FFF;
+    box-shadow: 0px 2px 14px 0px rgba(201, 60, 162, 0.10);
+    top: 172px;
+    left: calc(50% - 107px);
+    max-width: 220px
+    +above($breakpoints.sm)
+      top: 74px;
+      max-width: 100%
+    +above($breakpoints.md)
+      top: 107px;
+      left: calc(50% - 71px);
+      border-radius: 70.5px;
+      padding: 18px 24px
+    +above($breakpoints.xxl)
+      top: 127px
+      left: calc(50% - 55px)
+      padding: 27px 30px
+    div
+      margin: 0 0 3px 0
+
+  &__title
+    margin: 0 0 100px 0
+    z-index 1
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      margin: 0 0 18px 0
+    +above($breakpoints.md)
+      margin: 0 0 21px 0
+  &__button-container
+    margin: 0 0 26px 0
+    +above($breakpoints.sm)
+      margin: 0
+      display: none
+
+  &__button-description
+    margin: 0 0 16px 0
+    text-align: center
+
+  &__button
+    max-width: 240px
+    margin: 0 auto
+
+  &__feedback
+    display: none
+    +above($breakpoints.sm)
+      display: block

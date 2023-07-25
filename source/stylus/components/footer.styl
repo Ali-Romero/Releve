@@ -1,0 +1,70 @@
+.footer
+  text-align: center
+  color: $color-dark-1
+  background: $color-brown-2
+  position: relative
+  z-index 1
+  +above($breakpoints.sm)
+    text-align: left
+  &__decor
+    position: absolute
+    z-index 1
+    bottom: 99%
+    left: 0
+    right 0
+    transform: rotate(180deg)
+    img
+      margin: 0 auto
+      width 123px
+      height: auto
+      +above($breakpoints.sm)
+        width 198px
+      +above($breakpoints.md)
+        width 300px
+      +above($breakpoints.xxl)
+        width 387px
+  &__row
+    margin: 0 0 0 auto
+    padding: 12px 0
+    +above($breakpoints.sm)
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+  &__description
+    margin: 0 0 10px 0
+    +above($breakpoints.sm)
+      margin: 0
+    br
+      display: block
+  &__privacy
+    text-decoration: underline
+    display: block
+    margin: 2px 0 0 0
+    +above($breakpoints.md)
+      margin: 8px 0 0 0
+  &__connection
+    max-width: 134px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width: 100%
+      margin: 0
+  &__logo
+    margin: 0 0 4px 0
+    +above($breakpoints.sm)
+      margin: 7px 0 0 42px
+    +above($breakpoints.md)
+      margin: -6px 0 0 55px
+    +above($breakpoints.xxl)
+      margin: -14px 0 0 86px
+    img
+      width 110px
+      height: auto
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+        width 100px
+      +above($breakpoints.md)
+        width 150px
+      +above($breakpoints.xxl)
+        width 178px

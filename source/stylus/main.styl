@@ -1,0 +1,44 @@
+@font-face
+  font-family: "Geometria-Regular"
+  src: url('../fonts/Geometria-Regular.woff'), url('../fonts/Geometria-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Geometria-Medium"
+  src: url('../fonts/Geometria-Medium.woff'), url('../fonts/Geometria-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Geometria-Bold"
+  src: url('../fonts/Geometria-Bold.woff'), url('../fonts/Geometria-Bold.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+  background-color: $color-white
+  color: $color-black
+
+  &--thanks
+    background-image: url('../images/format-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    font-size: 13px
+    line-height: 130%
+    color: $color-black
+    +above($breakpoints.xxl)
+      font-size: 16px
+
+  &__content
+    flex: 1
+    &--layout
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column

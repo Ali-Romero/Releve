@@ -1,0 +1,39 @@
+.connection
+  &__container
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+    a
+      display: flex
+  &__num
+    font-size: 16px
+    line-height: 120%
+    +above($breakpoints.sm)
+      margin: 0 20px 0 0
+    +above($breakpoints.md)
+      font-size: 17px
+    +above($breakpoints.xxl)
+      margin: 0 24px 0 0
+      font-size: 18px
+  &__description
+    padding: 0 10px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 22px;
+    border: 1px solid #2E2A28;
+    font-size: 11px
+    line-height: 98%
+    display: inline-block
+    +above($breakpoints.sm)
+      padding: 0 18px
+      height: 30px
+    +above($breakpoints.md)
+      padding: 0 22px
+      height: 32px
+      font-size: 12px
+    +above($breakpoints.xxl)
+      font-size: 14px
+      padding: 0 32px
+      height: 43px

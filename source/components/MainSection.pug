@@ -1,0 +1,50 @@
+section.main-section
+  .main-section__image
+    img(src="images/main-image.jpg" loading="lazy" alt="image" width="695" height="793").d-block
+  .main-section__decor
+    img(src="images/main-decor.svg" loading="lazy" alt="image" width="518" height="518").d-block
+  +header(true)
+  .wrapper
+    .main-section__inner
+
+      .main-section__title-info.text-center
+        div.font-s-26.font-g-bold 46 дней
+        span.d-block.font-g-med
+          |от подписания договора 
+          br
+          |до первого занятия
+      h1.main-section__title
+        span.d-block.font-g-med.font-s-24
+          |Откройте свою студию 
+          br
+          |хореографии с прибылью
+        span.d-block.font-s-64
+          |от 
+          span.color-pink-1 1,7 млн ₽ 
+          |в год
+
+
+      .main-section__button-container
+        .main-section__button-description.color-grey-1.font-d-med.font-s-18
+          |Получите презентацию франшизы и финансовую модель
+        .main-section__button
+          .btn
+            button(href="#" data-remodal-target="modal-form-main")
+              span.btn__description Получить
+
+      .main-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__description.color-grey-1.font-g-med.font-s-18
+              |Получите подробную презентацию франшизы
+            .feedback__list
+              .feedback__item
+                .input.input--border
+                  input(type="text" name="name" placeholder="Ваше имя").input__field
+              .feedback__item
+                .input.input--border
+                  input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                .btn
+                  button(type="submit")
+                    span.btn__description Получить
