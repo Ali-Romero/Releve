@@ -1,0 +1,137 @@
+.finance-section
+  background-color: $color-white-2
+
+  &__inner
+    padding: 60px 0 62px 0
+    +above($breakpoints.md)
+      padding: 80px 0 84px 0
+    +above($breakpoints.xxl)
+      padding: 100px 0 107px 0
+
+  &__title
+    margin: 0 0 32px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+    +above($breakpoints.xxl)
+      margin: 0 0 42px 0
+
+  &__content
+    margin: 0 0 43px 0
+    +above($breakpoints.sm)
+      display: flex
+      align-items: flex-start
+      gap: 11px
+      margin: 0 0 43px 0
+    +above($breakpoints.md)
+      margin: 0 0 63px 0
+      gap: 40px
+
+  &__photo
+    max-width: 260px
+    width 100%
+    margin: 0 auto 20px auto
+    +above($breakpoints.sm)
+      margin: 0
+      max-width: 314px
+    +above($breakpoints.md)
+      max-width: 458px
+    +above($breakpoints.xxl)
+      max-width: 570px
+    img
+      width 100%
+      height: auto
+      border-radius: 16px
+
+  &__cards
+    max-width: 242px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+      max-width: 401px
+    +above($breakpoints.md)
+      max-width: 460px
+    +above($breakpoints.xxl)
+      max-width: 560px
+
+  &__cards-list
+    margin: 0 0 14px 0
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap 6px
+      margin: 0 0 14px 0
+    +above($breakpoints.md)
+      gap 16px
+      margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 17px 0
+      gap 20px
+
+  &__cards-item
+    display: flex
+    justify-content: center
+    +above($breakpoints.sm)
+      width auto !important
+
+  &__card
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 2px 14px 0px rgba(201, 60, 162, 0.05);
+    width: 220px;
+    height: 113px;
+    padding: 22px 4px;
+    +above($breakpoints.sm)
+      width: 196px;
+      height: 113px;
+      padding: 22px 4px;
+    +above($breakpoints.md)
+      width: 222px;
+      height: 149px;
+      padding: 35px 4px;
+    +above($breakpoints.xxl)
+      width 270px
+      height: 187px
+      padding: 49px 10px
+    br
+      display: block
+
+  &__card-title
+    margin: 0 0 5px 0
+    +above($breakpoints.md)
+      margin: 0 0 9px 0
+
+  &__cards-helper
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+
+  &__cards-progress
+    position relative
+    height: 6px !important
+    margin: 20px 0 0 0
+    border-radius: 10px
+    overflow: hidden
+    +above($breakpoints.sm)
+      display: none
+    .swiper-pagination-progressbar-fill
+      background-color: $color-pink-1
+
+  &__feedback
+    .feedback
+      text-align: center
+      border-radius: 16px;
+      background: #EFC5E3;
+      box-shadow: 0px 2px 14px 0px rgba(201, 60, 162, 0.05);
+      padding: 28px 0 38px 0
+      background-image: url('../images/decor-1.svg')
+      background-repeat: no-repeat
+      background-size: auto
+      background-position: center
+      +above($breakpoints.md)
+        padding: 40px 0 60px 0
+      +above($breakpoints.xxl)
+        padding: 62px 0 84px 0
+
+      &__list
+        margin: 0 auto

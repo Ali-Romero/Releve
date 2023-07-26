@@ -1,0 +1,77 @@
+section.finance-section
+  .wrapper
+    .finance-section__inner
+
+      h2.finance-section__title
+        span.font-g-bold.font-s-44 Франшиза Релеве в цифрах
+        span.d-block.font-g-med.font-s-18
+          |Показатели, которые говорят о многом
+
+      .finance-section__content
+        .finance-section__photo
+          img(src="images/finance-photo.jpg" loading="lazy" alt="photo" width="570" height="636").d-block
+        .finance-section__cards.swiper-finance
+          .finance-section__cards-list.text-center.swiper-wrapper
+            .finance-section__cards-item.swiper-slide
+              .finance-section__card
+                .finance-section__card-title.font-g-bold.font-s-28.color-pink-1 от 8 месяцев
+                .finance-section__card-description.font-s-18.color-grey-1
+                  |срок окупаемости 
+                  br
+                  |одной студии
+            .finance-section__cards-item.swiper-slide
+              .finance-section__card
+                .finance-section__card-title.font-g-bold.font-s-28.color-pink-1 с 1 месяца
+                .finance-section__card-description.font-s-18.color-grey-1
+                  |вы начнете получать 
+                  br
+                  |стабильную прибыль
+            .finance-section__cards-item.swiper-slide
+              .finance-section__card
+                .finance-section__card-title.font-g-bold.font-s-28.color-pink-1 от 138 280₽
+                .finance-section__card-description.font-s-18.color-grey-1
+                  |средняя ежемесячная 
+                  br
+                  |прибыль студии
+            .finance-section__cards-item.swiper-slide
+              .finance-section__card
+                .finance-section__card-title.font-g-bold.font-s-28.color-pink-1 46 дней
+                .finance-section__card-description.font-s-18.color-grey-1
+                  |понадобится для 
+                  br
+                  |открытия студии
+            .finance-section__cards-item.swiper-slide
+              .finance-section__card
+                .finance-section__card-title.font-g-bold.font-s-28.color-pink-1 более 40%
+                .finance-section__card-description.font-s-18.color-grey-1
+                  |рентабельность по 
+                  br
+                  |чистой прибыли
+            .finance-section__cards-item.swiper-slide
+              .finance-section__card
+                .finance-section__card-title.font-g-bold.font-s-28.color-pink-1 от 448 166₽
+                .finance-section__card-description.font-s-18.color-grey-1
+                  |инвестиций потребуется 
+                  br
+                  |на старте
+          .finance-section__cards-helper.font-s-14.color-grey-1
+            |*Без учета паушального взноса
+          .finance-section__cards-progress.finance-pagination
+
+      .finance-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title.font-s-36.font-g-bold Нужно больше цифр?
+            .feedback__description.color-grey-1.font-g-med.font-s-18
+              |Получите подробную финансовую модель
+            .feedback__list
+              .feedback__item
+                .input.input--border
+                  input(type="text" name="name" placeholder="Ваше имя").input__field
+              .feedback__item
+                .input.input--border
+                  input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                .btn
+                  button(type="submit")
+                    span.btn__description Получить
