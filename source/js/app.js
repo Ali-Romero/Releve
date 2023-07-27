@@ -42,9 +42,14 @@ function initCityForm() {
   $('[data-city-form]').on('submit', cityProgress)
 }
 
+function setCurrentYear() {
+  $('[data-current-year]').text(new Date().getFullYear())
+}
+
 $(document).ready(function () {
   initAnchorBtn()
   initCityForm()
+  setCurrentYear()
 
   $('input').inputmask()
 })

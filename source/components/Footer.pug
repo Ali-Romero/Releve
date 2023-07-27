@@ -1,11 +1,15 @@
-mixin footer(index)
+mixin footer()
   footer.footer
     .wrapper
       .footer__row
         .footer__col
-          .footer__description
-            span.font-n-s-bold.font-s-20 © Deserta, 2023
-            a(href="#" data-remodal-target="privacy").footer__privacy Политика конфиденциальности
+          .footer__container
+            .footer__logo
+              img(src="images/logo-main.png" loading="lazy" alt="logo" width="178" height="113").d-block
+            .footer__description
+              span.font-n-s-bold.font-s-20 Франшиза студии хореографии
+                br
+                |© Releve, 
+                span(data-current-year)
         .footer__col
-          .footer__logo
-            img(src="images/logo-main.png" loading="lazy" alt="logo" width="178" height="113").d-block
+          a(href="#" data-remodal-target="privacy").footer__privacy Политика конфиденциальности

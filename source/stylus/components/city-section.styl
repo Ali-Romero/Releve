@@ -1,0 +1,72 @@
+.city-section
+  &__inner
+    padding: 40px 0
+    position: relative
+    text-align: center
+    +above($breakpoints.sm)
+      padding: 50px 0
+      text-align: left
+    +above($breakpoints.xxl)
+      padding: 69px 0 63px 0
+
+  &__title
+    margin: 0 -10px 16px -10px
+    +above($breakpoints.sm)
+      margin: 0 0 16px 0
+
+  &__content
+    +above($breakpoints.sm)
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+
+  &__container
+    max-width: 490px
+    width 100%
+    +above($breakpoints.md)
+      max-width: 584px
+    +above($breakpoints.xxl)
+      max-width: 666px
+
+  &__photo
+    max-width: 225px
+    width 100%
+    position: absolute
+    bottom: 117px
+    left: 0
+    right 0
+    margin: 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+      left: auto
+      right auto
+      position: unset
+      bottom: auto
+    +above($breakpoints.md)
+      max-width: 360px
+    +above($breakpoints.xxl)
+      max-width: 470px
+    img
+      width 100%
+      height: auto
+      border-radius: 16px
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+
+  &__feedback
+    margin: 0 0 260px 0
+    +above($breakpoints.sm)
+      margin: 0 0 34px 0
+    +above($breakpoints.md)
+      margin: 0 0 132px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 189px 0
+
+  &__footer
+    max-width: 642px
+    text-align: left
+    .wrapper
+      padding: 0
+    .footer__row
+      padding: 0

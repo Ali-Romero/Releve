@@ -1,0 +1,33 @@
+section.city-section
+  .wrapper
+    .city-section__inner
+      .city-section__content
+        .city-section__container
+
+          h2.city-section__title.font-s-44
+            |Сделайте первый шаг 
+            br
+            |к открытию уже сегодня!
+
+          .city-section__feedback
+            .feedback
+              form(data-feedback-form).feedback__form
+                .feedback__description.color-grey-1.font-g-med.font-s-18
+                  |Проверьте, свободен ли ваш город для работы по франшизе
+                .feedback__list
+                  .feedback__item
+                    .input.input--border
+                      input(type="text" name="city" placeholder="Город").input__field
+                  .feedback__item
+                    .input.input--border
+                      input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+                  .feedback__item
+                    .btn
+                      button(type="submit")
+                        span.btn__description Получить
+
+          .city-section__footer
+            +footer()
+
+        .city-section__photo
+          img(src="images/city-photo.jpg" loading="lazy" alt="photo" width="470" height="462").d-block

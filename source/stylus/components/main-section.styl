@@ -35,14 +35,23 @@
   &__decor
     position: absolute
     z-index -2
-    top: -113px;
-    right: calc(50% - 765px);
+    top: 378px;
+    right: calc(50% - 215px);
+    +above($breakpoints.sm)
+      top: -69px;
+      right: calc(50% - 524px);
+    +above($breakpoints.md)
+      right: calc(50% - 765px);
     +above($breakpoints.xxl)
       right calc(50% - 1060px)
       top -113px
     img
-      width 400px
+      width 265px
       height: auto
+      +above($breakpoints.sm)
+        width 300px
+      +above($breakpoints.md)
+        width 400px
       +above($breakpoints.xxl)
         width 518px
 
