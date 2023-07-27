@@ -31,6 +31,27 @@ function initSwiperFinance() {
   })
 }
 
+function initSwiperGallery() {
+  const swiper = new Swiper('.swiper-gallery', {
+    speed: 400,
+    effect: 'coverflow',
+    initialSlide: 1,
+    grabCursor: true,
+    coverflowEffect: {
+      rotate: 60,
+      stretch: 0,
+      scale: 0.7,
+      depth: 400,
+      modifier: 1,
+    },
+    navigation: {
+      nextEl: '.gallery-button-next',
+      prevEl: '.gallery-button-prev',
+    },
+  })
+}
+
 $(document).ready(function () {
   initSwiperFinance()
+  initSwiperGallery()
 })
