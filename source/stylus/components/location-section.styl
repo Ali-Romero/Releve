@@ -1,0 +1,76 @@
+.location-section
+  position: relative
+  background-color: $color-white-2
+
+  &__inner
+    padding: 36px 0 342px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      padding: 44px 0 63px 0
+    +above($breakpoints.md)
+      padding: 58px 0 88px 0
+    +above($breakpoints.xxl)
+      padding: 88px 0 146px 0
+
+  &__title
+    margin: 0 0 22px 0
+
+  &__title-info
+    margin: 0 0 22px 0
+    +above($breakpoints.md)
+      margin: 0 0 30px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 43px 0
+
+  &__image
+    position: absolute
+    bottom: 20px
+    right: 0
+    left: 0
+    +above($breakpoints.sm)
+      left: auto
+      bottom: auto
+      top: -7%;
+      right: calc(50% - 523px)
+    +above($breakpoints.md)
+      right: calc(50% - 550px)
+    +above($breakpoints.xxl)
+      right: calc(50% - 718px);
+    img
+      width 300px
+      height: auto
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+        width 431px
+      +above($breakpoints.md)
+        width 552px
+      +above($breakpoints.xxl)
+        width 745px
+
+  &__feedback
+    .feedback
+      border-radius: 16px;
+      background-color: $color-pink-2
+      box-shadow: 0px 2px 14px 0px rgba(201, 60, 162, 0.05);
+      background-image: url('../images/decor-1.svg')
+      background-repeat: no-repeat
+      background-size: auto
+      background-position: center
+      padding: 24px 10px 21px 10px
+      +above($breakpoints.sm)
+        max-width: 676px
+        padding: 28px 0 30px 28px
+      +above($breakpoints.md)
+        max-width: 822px
+        padding: 36px 0 40px 34px
+      +above($breakpoints.xxl)
+        padding: 48px 0 55px 45px
+        max-width: 970px
+      &__list
+        max-width: 328px
+        +above($breakpoints.md)
+          max-width: 390px
+        +above($breakpoints.xxl)
+          max-width: 442px

@@ -1,0 +1,33 @@
+section.location-section
+
+  .location-section__image
+    img(src="images/location-image.png" loading="lazy" alt="image" width="745" height="748").d-block
+
+  .wrapper
+    .location-section__inner
+
+      h2.location-section__title.font-s-44
+        |Где лучше всего открывать 
+        br
+        |студию хореографии 
+        span.color-pink-1 Релеве?
+      .location-section__title-info.font-s-18
+        |Подбор локации — один из важных факторов успеха! Поэтому мы 
+        br
+        |помогаем нашим партнерам выбрать лучшее место для бизнеса
+
+      .location-section__feedback
+        .feedback
+          form(data-city-form).feedback__form
+            .feedback__description.font-s-18.font-g-med
+              |Укажите название города и мы подготовим список удачных локаций
+            .feedback__list
+              .feedback__item
+                .input.js-input-city
+                  input(type="text" name="city" placeholder="Город").input__field
+                  .input__progress.js-input-city-progress
+                    span.js-input-city-percent 0%
+              .feedback__item
+                .btn
+                  button(type="submit")
+                    span.btn__description Получить список
